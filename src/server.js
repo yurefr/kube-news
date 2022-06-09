@@ -11,6 +11,9 @@ const metricsMiddleware = promBundle({
     includePath: true, 
     includeStatusCode: true, 
     includeUp: true,
+    customLabels: {
+        version: "v1"
+    },
     promClient: {
         collectDefaultMetrics: {
         }
